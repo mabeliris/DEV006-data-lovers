@@ -1,11 +1,31 @@
-import main from './data.js';
+//import main from './data.js';
 // import data from './data/lol/lol.js';
+
+import { countries, showSports } from './data.js';
 import data from './data/athletes/athletes.js';
+
 // import data from './data/rickandmorty/rickandmorty.js';
 
-console.log(main, data);
+//console.log(data.athletes);
 
-const btnView=document.getElementById("explora").addEventListener("click");
+
+//mostrar data (deportes)
+//data.athletes.map(sport => console.log(sport.sport));
+
+const sports=showSports(data.athletes)
+console.log(sports);
+
+const country= countries(data.athletes)
+console.log(country);
+
+
+
+
+
+
+
+//document.getElementById("explora").addEventListener("click",showSports);
+
 
 
 
