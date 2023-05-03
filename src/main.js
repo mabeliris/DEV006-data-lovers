@@ -26,7 +26,6 @@ console.log(country);
 
 //document.getElementById("explora").addEventListener("click",showSports);
 
-const btnView=document.getElementById("explora").addEventListener("click");
 
 
 
