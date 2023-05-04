@@ -1,8 +1,8 @@
+
+   
 body {
     margin: 0%;
-    width: 100%; 
-    max-width: 100%;
-    min-width: 100%;       
+    width: 100%;        
     padding: 0%;
     text-align: center;
     justify-content: center;
@@ -10,42 +10,52 @@ body {
 }
 
 .logoRio {
-    width: 100px;
-    height: 90px;
-    margin-left: 20px;
+    width: 120px;
+    height: 100px;
+    top: 111px;
+    left: 69px;
+    padding: 40px;
 }
+
+
+
 
 header{
     text-align: right;
     display: flex;
-    background-color:#CEF506; 
 }
 
 .menu{
     list-style: none;
-    margin: auto; 
+    padding-right: 5%;
+    margin: auto;  
 }
 
 .menu li a{
-    font-size: 20px;
+    font-size: 22px;
     text-decoration: none;
-    color:black;
+    color: #ffffff;
+    padding: 13px;
     display: block; 
+    background-color:#fd4f04; 
+    border-radius: 5px;
 }
 
 .menu li{
     display: inline-block;
-    padding: 30px;
+    padding: 40px;
 }
 
 .menu li a:hover{
-    color:#fd4f04;
+    background-color:#CEF506;
 }
 
 .information{
     display: flex;
     color: white;
     background-color: black;
+    margin-top: 20px;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -62,43 +72,34 @@ article section .s1{
     margin-left: 50px;
 }
 
-#s1{
-    font-size: 60px;
-}
-
-#s2{
-    font-size: 20px;
+.words_head #wh1{
+    font-size: 50px;
 }
 
 .colors{
-    margin-left: 100px;
+    margin-left: 150px;
 }
-/*
+
 .img_explora{
     background-image: url(explora.png);
+    width: 100%;
     height: 500px;
     
     background-repeat: no-repeat;
     background-size: 1100px 500px;
-}*/
+}
 
 button{
-    background-color:#CEF506;
-    color:#000000;
+    background-color: #fd4f04;
+    color: #ffffff;
     border-radius: 10px;
     padding: 10px;
     font-size: 20px;
-    position: relative;
-    right:30px;
-}
-
-button:hover{
-    color:#fd4f04;
 }
 
 footer{
-    background-color:#CEF506;
-    color: #000000;
+    background-color: #fd4f04;
+    color: #ffffff;
     font-style:italic;
     font-size: 15px;
     padding: 10px;
