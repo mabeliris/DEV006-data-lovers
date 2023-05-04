@@ -1,14 +1,5 @@
 // estas funciones son de ejemplo
-
-
-
-
-
-
-
-
-
-
+//import athletes from "./data/athletes/athletes";
 //primera historia de usuario, mostrar la data
 
 export const showSports=(array)=> { 
@@ -26,11 +17,14 @@ export const showSports=(array)=> {
   });
   return newFilter;
 };*/
-
-export const countries= (arrayCountries)=>{
-  const paises=arrayCountries.filter(arrayCountry=> arrayCountry.team==="USA");
-  return (paises)
+export const countries= (array)=>{
+  const newFilter=array.filter(athlete=>(athlete.team));
+  return (newFilter)
 };
+ 
+
+
+ 
 
   
 
