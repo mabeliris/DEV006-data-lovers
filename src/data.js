@@ -4,7 +4,7 @@
 
 export const showSports=(array)=> { 
   const deportes=array.map(athlete =>(athlete.sport));
-  return(deportes)
+  return [...new  Set (deportes)]
 
 };
 
@@ -18,8 +18,8 @@ export const showSports=(array)=> {
   return newFilter;
 };*/
 export const countries= (array)=>{
-  const newFilter=array.filter(athlete=>(athlete.team));
-  return (newFilter)
+  const team=array.map(athlete=>(athlete.team));
+  return [...new Set(team)]
 };
  
 

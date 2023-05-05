@@ -90,6 +90,7 @@ button{
     font-size: 20px;
     position: relative;
     right:30px;
+    cursor: pointer;
 }
 
 button:hover{
@@ -102,4 +103,10 @@ footer{
     font-style:italic;
     font-size: 15px;
     padding: 10px;
+}
+.sports-page{
+    display: none;
+}
+.showSport{
+    display: block;
 }

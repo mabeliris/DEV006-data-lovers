@@ -10,11 +10,18 @@ import data from './data/athletes/athletes.js';
 
 
 //mostrar data (deportes)
-//data.athletes.map(sport => console.log(sport.sport));
-
+const btnExplorar=document.getElementById("bntExplorar");
+const sportsPage = document.getElementById("sports_page");
+//función boton explora
+btnExplorar.addEventListener("click",paginaDeportes)
+function paginaDeportes(){
+    sportsPage.classList.toggle("showSport");
+}
 const sports=showSports(data.athletes)
-//console.log(sports);
+console.log(sports);
 
+//filtrar
+document.getElementById("bntExplorar").addEventListener("click",countries)
 const country= countries(data.athletes)
 console.log(country);
 
