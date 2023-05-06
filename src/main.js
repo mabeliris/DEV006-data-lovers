@@ -11,12 +11,12 @@ import data from './data/athletes/athletes.js';
 
 //mostrar data (deportes)
 const btnExplorar=document.getElementById("bntExplorar");
-const sportsPage = document.getElementById("sports_page");
+const sportsPage = document.getElementById("countries_page");
 //función boton explora
-btnExplorar.addEventListener("click",paginaDeportes)
-function paginaDeportes(){
-    sportsPage.classList.toggle("showSport");
-}
+btnExplorar.addEventListener("click",paginaCountries)
+function paginaCountries(){
+    sportsPage.classList.toggle("showCoountries");
+};
 const sports=showSports(data.athletes)
 console.log(sports);
 
