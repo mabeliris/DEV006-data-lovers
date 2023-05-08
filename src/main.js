@@ -9,21 +9,21 @@ import data from './data/athletes/athletes.js';
 //console.log(data.athletes);
 
 
-//mostrar data (deportes)
+//mostrar data (paises)
 const btnExplorar=document.getElementById("bntExplorar");
-const sportsPage = document.getElementById("countries_page");
+const countriesPage = document.getElementById("countries_page");
 //función boton explora
 btnExplorar.addEventListener("click",paginaCountries)
 function paginaCountries(){
-    sportsPage.classList.toggle("showCoountries");
+    countriesPage.classList.toggle("showCoountries");
 };
-const sports=showSports(data.athletes)
-console.log(sports);
-
-//filtrar
-document.getElementById("bntExplorar").addEventListener("click",countries)
+//mostrar paises
 const country= countries(data.athletes)
 console.log(country);
+
+//filtrados
+const sports = showSports(data.athletes)
+console.log(sports);
 
 
 
