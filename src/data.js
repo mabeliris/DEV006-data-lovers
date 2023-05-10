@@ -1,5 +1,4 @@
-// estas funciones son de ejemplo
-//import athletes from "./data/athletes/athletes";
+
 //primera historia de usuario, mostrar la data
 
 export const showSports=(array)=> { 
@@ -19,8 +18,10 @@ export const showSports=(array)=> {
 };*/
 export const countries= (array)=>{
   const team=array.map(athlete=>(athlete.team));
-  return [...new Set(team)]
+  return [...new Set(team)]; 
+  
 };
+
  
 
 

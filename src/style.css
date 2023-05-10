@@ -110,3 +110,10 @@ footer{
 .showCoountries{
     display: block;
 }
+sports-page{
+    display:none;
+}
+showSports {
+    display: block;
+}
+
