@@ -22,14 +22,6 @@ export const countries= (array)=>{
   
 };
 
- 
-
-
- 
-
-  
-
-
 // tercera historia,ordenar 
 
 export const ordenar=()=> {
