@@ -20,18 +20,28 @@ function paginaCountries(){
 };
 //mostrar paises
 const country= countries(data.athletes)
-//console.log(country);
+console.log(country);
+
 //country.forEach(lista=> console.log(lista));
 //imprimir lista de paises
-const countriesList = document.getElementById("countriesList");
-const countriesPrint= country.forEach(listaDeportes=>console.log(listaDeportes));
-const newArrayCountries = countriesPrint;
-countriesList.innerHTML = "esta es la lista de paises " + newArrayCountries;
+
+//countriesList.innerHTML=country;
+function pintarPaises(paises){
+    const countriesList = document.getElementById("countriesList");
+    //const texto="<p>hola</p>"
+    //countriesList.innerHTML=texto;
+    //const p = document.createElement("p");
+    //p.innerHTML="hola";
+    //countriesList.append(p);
+    country.forEach(item=>{
+        const li=document.createElement("li");
+        li.textContent=item;
+        countriesList.appendChild(li)
+    })
 
 
-
-
-
+}
+pintarPaises(country);
 
 
 //filtrados
