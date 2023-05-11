@@ -2,10 +2,20 @@
 //primera historia de usuario, mostrar la data
 
 export const showSports=(array)=> { 
-  const deportes=array.map(athlete =>(athlete.sport));
-  return [...new  Set (deportes)]
+  const deportes=array.map(athlete =>(athlete.sport));  
+         
+  return [...new  Set (deportes)]; 
 
 };
+
+
+export const orderSport=()=>{
+
+}
+
+
+
+
 
 //segunda historia, filtrar
 
@@ -21,6 +31,9 @@ export const countries= (array)=>{
   return [...new Set(team)]; 
   
 };
+
+
+
 
 // tercera historia,ordenar 
 
