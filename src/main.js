@@ -1,10 +1,8 @@
 //import main from './data.js';
 // import data from './data/lol/lol.js';
 
-import {countries, showSports } from './data.js';
+import {countries, deportistas, showSports } from './data.js';
 import data from './data/athletes/athletes.js';
-
-// import data from './data/rickandmorty/rickandmorty.js';
 
 //console.log(data.athletes);
 
@@ -22,10 +20,6 @@ function paginaCountries(){
 const country= countries(data.athletes)
 console.log(country);
 
-//country.forEach(lista=> console.log(lista));
-//imprimir lista de paises
-
-//countriesList.innerHTML=country;
 //mostrar paises en pantalla
 function pintarPaises(paises){
     const countriesList = document.getElementById("countriesList");
@@ -69,4 +63,7 @@ function pintarDeportes(deporte){
     })
 }
 pintarDeportes(sports);
+
+const Olympic = deportistas(data.athletes)
+console.log(Olympic);
 

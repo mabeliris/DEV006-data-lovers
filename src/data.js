@@ -45,7 +45,8 @@ export const ordenar=()=> {
   
 
 
-
-export const anotherExample = () => {
-  return 'OMG';
+//atletas
+export const deportistas = (array) => {
+  const atleta=array.map(athlete=>(athlete.name));
+  return [...new Set(atleta)];
 };
