@@ -1,10 +1,8 @@
 //import main from './data.js';
 // import data from './data/lol/lol.js';
 
-import {countries, showSports } from './data.js';
+import {countries, deportistas, showSports } from './data.js';
 import data from './data/athletes/athletes.js';
-
-// import data from './data/rickandmorty/rickandmorty.js';
 
 //console.log(data.athletes);
 
@@ -22,10 +20,7 @@ function paginaCountries(){
 const country= countries(data.athletes)
 console.log(country);
 
-//country.forEach(lista=> console.log(lista));
-//imprimir lista de paises
-
-//countriesList.innerHTML=country;
+//mostrar paises en pantalla
 function pintarPaises(paises){
     const countriesList = document.getElementById("countriesList");
     //const texto="<p>hola</p>"
@@ -58,13 +53,17 @@ function paginaDeportes(){
     sportPage.classList.toggle("showSports");
 };
 
-//ordenar como lista
-//const listaDeportes= sports.forEach(lista=> console.log(lista));
-//console.log(lista);
+//mostrar paises en pantalla
+function pintarDeportes(deporte){
+    const sportList = document.getElementById("sportList");
+    sports.forEach(list=>{
+        const sportLista=document.createElement("li");
+        sportLista.textContent=list;
+        sportList.appendChild(sportLista)
+    })
+}
+pintarDeportes(sports);
 
-
-//activar enlace pagina deportes
-
-
-
+const Olympic = deportistas(data.athletes)
+console.log(Olympic);
 
