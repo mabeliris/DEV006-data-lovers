@@ -26,6 +26,7 @@ console.log(country);
 //imprimir lista de paises
 
 //countriesList.innerHTML=country;
+//mostrar paises en pantalla
 function pintarPaises(paises){
     const countriesList = document.getElementById("countriesList");
     //const texto="<p>hola</p>"
@@ -58,13 +59,14 @@ function paginaDeportes(){
     sportPage.classList.toggle("showSports");
 };
 
-//ordenar como lista
-//const listaDeportes= sports.forEach(lista=> console.log(lista));
-//console.log(lista);
-
-
-//activar enlace pagina deportes
-
-
-
+//mostrar paises en pantalla
+function pintarDeportes(deporte){
+    const sportList = document.getElementById("sportList");
+    sports.forEach(list=>{
+        const sportLista=document.createElement("li");
+        sportLista.textContent=list;
+        sportList.appendChild(sportLista)
+    })
+}
+pintarDeportes(sports);
 
