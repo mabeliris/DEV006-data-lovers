@@ -28,10 +28,23 @@ function pintarPaises(paises){
     //const p = document.createElement("p");
     //p.innerHTML="hola";
     //countriesList.append(p);
-    country.forEach(item=>{
-        const li=document.createElement("li");
-        li.textContent=item;
+    paises.forEach(item=>{
+        // 1. crear elemento li
+        const li = document.createElement("li");
+        // 2. crear elemento button
+        const btn=document.createElement("button");
+        // 3. asignar el textCont ent al button        
+        btn.textContent = item;
+        // 4. agregar el button al li con un appendChild
+        li.appendChild(btn);
+        // 5. agregar el li al countriesList con un appendChild
         countriesList.appendChild(li)
+
+        // 6. agregar un click eventListener al btm - para probar cada vez que le demos click a un boton se debe hacer un console.log del nombre del pais
+        btn.addEventListener("click",()=>{
+            console.log(item)
+        })
+
     })
 
 
@@ -63,6 +76,17 @@ function pintarDeportes(deporte){
     })
 }
 pintarDeportes(sports);
+
+function buttonCountries(botones){
+    const btn = document.getElementById("countriesList");
+    country.forEach(button=>{
+        const boton = document.createComment("button");
+        boton.innerHTML=button;
+        btn.append(boton);
+    })
+    
+}
+buttonCountries(country);
 
 const Olympic = deportistas(data.athletes)
 console.log(Olympic);
