@@ -1,7 +1,7 @@
 //import main from './data.js';
 // import data from './data/lol/lol.js';
 
-import {countries, deportistas, showSports } from './data.js';
+import {countries, deportistas, filtrado, showSports } from './data.js';
 import data from './data/athletes/athletes.js';
 
 //console.log(data.athletes);
@@ -18,7 +18,7 @@ function paginaCountries(){
 };
 //mostrar paises
 const country= countries(data.athletes)
-console.log(country);
+
 
 //mostrar paises en pantalla
 function pintarPaises(paises){
@@ -28,10 +28,30 @@ function pintarPaises(paises){
     //const p = document.createElement("p");
     //p.innerHTML="hola";
     //countriesList.append(p);
-    country.forEach(item=>{
-        const li=document.createElement("li");
-        li.textContent=item;
+    paises.forEach(item=>{
+        // 1. crear elemento li
+        const li = document.createElement("li");
+        // 2. crear elemento button
+        const btn=document.createElement("button");
+        // 3. asignar el textContent al button        
+        btn.textContent = item;
+        // 4. agregar el button al li con un appendChild
+        li.appendChild(btn);
+        // 5. agregar el li al countriesList con un appendChild
         countriesList.appendChild(li)
+
+        // 6. agregar un click eventListener al btm - para probar cada vez que le demos click a un boton se debe hacer un console.log del nombre del pais
+        btn.addEventListener("click",()=>{
+            
+           const filterData= filtrado(data.athletes, item)
+            console.log(filterData)
+            const card=document.createElement("div");
+            card.innerText=filterData.map(i=>i.name)
+            console.log(filterData.map(i => i.name))
+            li.appendChild(card);
+
+        })
+
     })
 
 
@@ -39,9 +59,9 @@ function pintarPaises(paises){
 pintarPaises(country);
 
 
-//filtrados
+
 const sports = showSports(data.athletes)
-console.log(sports);
+
 
 //enlace deportes
 const sportLink = document.getElementById("sports");
@@ -65,5 +85,5 @@ function pintarDeportes(deporte){
 pintarDeportes(sports);
 
 const Olympic = deportistas(data.athletes)
-console.log(Olympic);
+
 
