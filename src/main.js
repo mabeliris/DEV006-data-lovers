@@ -1,7 +1,7 @@
 //import main from './data.js';
 // import data from './data/lol/lol.js';
 
-import {countries, deportistas, showSports } from './data.js';
+import {countries, deportistas, filtrado, showSports } from './data.js';
 import data from './data/athletes/athletes.js';
 
 //console.log(data.athletes);
@@ -18,7 +18,7 @@ function paginaCountries(){
 };
 //mostrar paises
 const country= countries(data.athletes)
-console.log(country);
+
 
 //mostrar paises en pantalla
 function pintarPaises(paises){
@@ -33,7 +33,7 @@ function pintarPaises(paises){
         const li = document.createElement("li");
         // 2. crear elemento button
         const btn=document.createElement("button");
-        // 3. asignar el textCont ent al button        
+        // 3. asignar el textContent al button        
         btn.textContent = item;
         // 4. agregar el button al li con un appendChild
         li.appendChild(btn);
@@ -42,7 +42,14 @@ function pintarPaises(paises){
 
         // 6. agregar un click eventListener al btm - para probar cada vez que le demos click a un boton se debe hacer un console.log del nombre del pais
         btn.addEventListener("click",()=>{
-            console.log(item)
+            
+           const filterData= filtrado(data.athletes, item)
+            console.log(filterData)
+            const card=document.createElement("div");
+            card.innerText=filterData.map(i=>i.name)
+            console.log(filterData.map(i => i.name))
+            li.appendChild(card);
+
         })
 
     })
@@ -52,9 +59,9 @@ function pintarPaises(paises){
 pintarPaises(country);
 
 
-//filtrados
+
 const sports = showSports(data.athletes)
-console.log(sports);
+
 
 //enlace deportes
 const sportLink = document.getElementById("sports");
@@ -77,17 +84,6 @@ function pintarDeportes(deporte){
 }
 pintarDeportes(sports);
 
-function buttonCountries(botones){
-    const btn = document.getElementById("countriesList");
-    country.forEach(button=>{
-        const boton = document.createComment("button");
-        boton.innerHTML=button;
-        btn.append(boton);
-    })
-    
-}
-buttonCountries(country);
-
 const Olympic = deportistas(data.athletes)
-console.log(Olympic);
+
 

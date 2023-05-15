@@ -50,3 +50,12 @@ export const deportistas = (array) => {
   const atleta=array.map(athlete=>(athlete.name));
   return [...new Set(atleta)];
 };
+
+//filtrar paises por atletas
+export const filtrado=(arr,team) =>{
+  return arr.filter(el=>el.team===team);
+
+}
+
+
+
