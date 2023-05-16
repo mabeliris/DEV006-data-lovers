@@ -44,8 +44,10 @@ visualizar cada país como un botón
 Al dar click debe mostrarse una lista de los atletas que pertenecen a ese país.
 
 
-
 #### 3.Prototipo de baja fidelidad
+- (https://raw.githubusercontent.com/claudiamartinezv/DEV006-data-lovers/main/src/prototipoBaja.jpg)
+
+
 
 
 #### 4.Prototipo de alta fidelidad
