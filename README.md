@@ -48,17 +48,13 @@ Al dar click debe mostrarse una lista de los atletas que pertenecen a ese país.
 
 
 #### 3.Prototipo de alta fidelidad
+ - [Prototipo en FIGMA](https://www.figma.com/file/CzPwE3cCd6eVcHWtA9glM6/PROTOTIPO?type=design&node-id=73-3&t=MNo1zIbeYViQZG4D-0)
+
 =======
 ## Authors
 
 - [@mabeliris](https://github.com/mabeliris)
 - [@claudiamartinezv](https://github.com/claudiamartinezv)
-
-
-
-## Prototipo de Alta Fidelidad
-
- - [Prototipo en FIGMA](https://www.figma.com/file/CzPwE3cCd6eVcHWtA9glM6/PROTOTIPO?type=design&node-id=73-3&t=MNo1zIbeYViQZG4D-0)
 
 
 ## Color Reference
