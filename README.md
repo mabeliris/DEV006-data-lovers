@@ -2,34 +2,49 @@
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
+* [1. Resumen del proyecto](#1-resumen-del-proyecto) 
+* [2. Historias de usuario](#2-Historias-de-usuario)
+* [3. Prototipo de baja fidelidad](#3-Prototipo-de-baja-fidelidad)
+* [4. Prototipo de alta fidelidad](#4-Prototipo-de-alta-fidelidad)
 * [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
 * [9. Checklist](#9-checklist)
 
 ***
 
-## 2. Resumen del proyecto
-
-
-
-
-
-
-
+## 1. Resumen del proyecto
  
 ### Historias de usuario
+## 1.Historia de usuario 1( ver)
+
+Yo como aficionado  
+quiero ver la lista de deportes
+para saber cuales participaron ese año.
+
+## Criterios de aceptación:
+La lista de deportes mostrados en la página
+
+## Definición de terminado
 
 
-#### Prototipo de baja fidelidad
+
+## 2.Historia de usuario 2(filtrar)
+yo como aficionado a los deportes
+quiero filtrar por países
+para saber cuántos participantes hay por cada uno. 
+
+## Criterios de aceptación:
+visualizar cada país como un botón
+Al dar click debe mostrarse una lista de los atletas que pertenecen a ese país.
+
+## Definición de terminado
 
 
-#### Prototipo de alta fidelidad
+
+
+#### 2.Prototipo de baja fidelidad
+
+
+#### 3.Prototipo de alta fidelidad
 
 
 
