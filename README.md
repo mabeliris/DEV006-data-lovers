@@ -47,21 +47,16 @@ Al dar click debe mostrarse una lista de los atletas que pertenecen a ese país.
 #### 2.Prototipo de baja fidelidad
 
 
-#### 3.Prototipo de alta fidelidad
+
+#### 4.Prototipo de alta fidelidad
+ - [Prototipo en FIGMA](https://www.figma.com/file/CzPwE3cCd6eVcHWtA9glM6/PROTOTIPO?type=design&node-id=73-3&t=MNo1zIbeYViQZG4D-0)
 =======
-## Authors
+## 5.Authors
 
 - [@mabeliris](https://github.com/mabeliris)
 - [@claudiamartinezv](https://github.com/claudiamartinezv)
 
-
-
-## Prototipo de Alta Fidelidad
-
- - [Prototipo en FIGMA](https://www.figma.com/file/CzPwE3cCd6eVcHWtA9glM6/PROTOTIPO?type=design&node-id=73-3&t=MNo1zIbeYViQZG4D-0)
-
-
-## Color Reference
+## 6.Color Reference
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
@@ -77,7 +72,7 @@ Al dar click debe mostrarse una lista de los atletas que pertenecen a ese país.
 | Color letra footer | ![#000000](https://via.placeholder.com/10/000000?text=+) #000000 |
 
 
-## Ejecutación local
+## 7.Ejecutación local
 
 Clonar el proyecto
 
