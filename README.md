@@ -45,6 +45,9 @@ Al dar click debe mostrarse una lista de los atletas que pertenecen a ese país.
 
 
 #### 2.Prototipo de baja fidelidad
+https://raw.githubusercontent.com/claudiamartinezv/DEV006-data-lovers/main/prototipoBaja.jpg
+
+
 
 
 #### 3.Prototipo de alta fidelidad
