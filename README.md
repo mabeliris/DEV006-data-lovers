@@ -99,7 +99,7 @@ Ejecutar terminal
   npm run start
 ```
 ## 🛠 Skills
-Javascript, HTML, CSS y GitHub.
+Javascript, HTML, CSS y GitHub
 
 >>>>>>> 54a51eb617b183c454220cc5dbb84c0391f8370f
 
